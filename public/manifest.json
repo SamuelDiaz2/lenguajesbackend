@@ -1,0 +1,23 @@
+{
+  "name": "Lenguajes Programacion",
+  "short_name": "LenguajesBackend",
+  "description": "Es informacion de algunos lenguajes usados en backend",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a84ff",
+  "theme_color": "#0a84ff",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1903/1903496.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1903/1903496.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
