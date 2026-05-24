@@ -3,7 +3,7 @@ const CACHE_NAME = "version-1";
 // Definimos las rutas reales de tu aplicación Next.js
 const urlsToCache = [
   "/", // Tu página Home (page.tsx)
-  "/base-de-datos", // Tu página Uno (notas/page.tsx)
+  "/base-de-datos", // Página Uno
   "/manifest.json", // Es buena práctica cachear el manifest también
 ];
 // Instalar el Service Worker

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from 'next/link';
+import SWRegistration from "./SWRegistration";
 
 export const metadata: Metadata = {
   title: "Backend 2026",
   description: "Guía de lenguajes y bases de datos",
+  manifest: "/manifest.json"
 };
 
 export default function RootLayout({
@@ -95,6 +97,7 @@ export default function RootLayout({
         `}</style>
       </head>
       <body>
+        <SWRegistration />
         <header className="nav-container">
           <Link href="/" className="btn-nav btn-blue">
             <span style={{fontSize: '18px'}}>💻</span>
