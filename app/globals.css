@@ -1,26 +1,106 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* app/backend.css */
+.backend-container {
+  min-height: 100vh;
+  background-color: #020617;
+  color: #f8fafc;
+  padding: 3rem 1.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.backend-content {
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.backend-header {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.header-icon-wrapper {
+  display: inline-flex;
+  padding: 0.75rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  color: #60a5fa;
 }
+
+.backend-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  background: linear-gradient(to bottom, #ffffff, #64748b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.backend-subtitle {
+  margin-top: 1rem;
+  color: #94a3b8;
+  font-size: 1.125rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.lang-card {
+  padding: 2rem;
+  background-color: rgba(15, 23, 42, 0.5);
+  border: 1px solid #1e293b;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.lang-card:hover {
+  background-color: #0f172a;
+  border-color: #334155;
+  transform: translateY(-4px);
+}
+
+.icon-box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.lang-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.lang-role {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #60a5fa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.lang-desc {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Colores dinámicos */
+.bg-ts { background-color: #2563eb; }
+.bg-py { background-color: #eab308; }
+.bg-go { background-color: #06b6d4; }
+.bg-rs { background-color: #c2410c; }

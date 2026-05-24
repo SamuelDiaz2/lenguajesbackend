@@ -1,0 +1,68 @@
+.db-page {
+  min-height: 100vh;
+  background-color: #020617;
+  color: #f8fafc;
+  padding: 4rem 2rem;
+}
+
+.db-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.db-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.db-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.db-card:hover {
+  border-color: #10b981;
+  transform: translateY(-5px);
+}
+
+.db-icon-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.db-icon {
+  background: #1e293b;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  color: #10b981;
+}
+
+.db-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.compatibility-tag {
+  display: inline-block;
+  background: #1e3a8a;
+  color: #bfdbfe;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.4rem;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+}
+
+.db-description {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
